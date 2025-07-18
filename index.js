@@ -1,6 +1,6 @@
 var x=3;
 
-let name="yuvaraj";
+let name="suvitha";
 
 const pi=3.14;
 
