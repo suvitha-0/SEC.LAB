@@ -40,13 +40,14 @@ const[name,b1,b2]=arr2;
 console.log(name)
 //filter
 let students=[
-    {name:"Aishwarya",grade:"O+"},
-    {name:"Josh",grade:"A+"},
+    {name:"suvitha",grade:"O+"},
+    {name:"sobika",grade:"A+"},
 ]
 let gradestudent=students.filter(student => student.grade==="O+");
 console.log(gradestudent);
 //Splice
 console.log("---Splice---")
-let names=["Aishwarya","Josh","Joe"];
+let names=["suvitha","sobika","aishu"];
 names.splice(2,1,"David");
+
 console.log(names);
