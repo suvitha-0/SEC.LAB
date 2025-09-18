@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //QUANTIFIERS Specify how many charc or grp shld appear
+        //Syntax
+        //* 0 or more
+        //+ 1 or more
+        //? 0 or 1
+        let text="aaaba";
+        let pattern=/\a*/g;
+        let result=text.match(pattern);
+        console.log(result)
+
+        let sentence="javascript programming language.\njava programming language";
+        let pattern2=/\programming+/ig;
+        let result2=sentence.match(pattern2);
+        console.log(result2)
+
+        let digitchar="001js";
+        let pattern3=/\d+\w/g;
+        let result3=digitchar.match(pattern3)
+        console.log(result3)
+
+        let texts="Hai Aishu"
+        let pattern4=/(\w+)\s+(\w+)/;
+        let result4=texts.match(pattern4);
+        console.log(result4);
+        console.log(result4[0]);
+        console.log(result4[1]);
+        console.log(result4[2]);
+
+        let text1="apple banana apple grape";
+        let pattern5=/(apple)/;
+        let result5=pattern2.exec(text);
+        console.log(result2[0]);
+        console.log(result2[1]);
+        
+        let pattern6=/apple/g;
+        let result6=text.replace(pattern4,"orange");
+        console.log(result6);
+
+        let pattern7=/\s+/;
+        result7=text.split(pattern7);
+        console.log(result7);
+        
+        
+    </script> 
+</body>
+</html>
